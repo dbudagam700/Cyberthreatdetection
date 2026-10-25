@@ -1,6 +1,68 @@
+### OVERVIEW:
+
+The QBiDR-NAL TransNet project proposes a deep learning framework for multi-class
+network intrusion detection by integrating Quantum BiDirectional Residual Network (QBiDR)
+and Neuro Arithmetic Logic Transformer (NAL-T) to identify complex network attack patterns. 
+Mexican Axolotl Optimization (MAO) is used for feature selection to eliminate redundant features, 
+while SHAP-based explainable AI identifies the most important network features influencing classification.
+The proposed model is evaluated on the CIC-IDS2017 and CIC-DDoS2019 datasets.
+
+### DATASET DETAILS:
+
+**DATASET I:** CICIDS-2017
+
+LINK: https://www.kaggle.com/datasets/chethuhn/network-intrusion-dataset
+
+NO.OF RECORDS: 28,30,743
+
+ORIGINAL FEATURES: 78
+
+SELECTED FEATURES: 19
+
+TARGET: ATTACK CATEGORY
+
+**DATASET II:** CIC-DDoS2019
+
+LINK: https://www.kaggle.com/datasets/dhoogla/cicddos2019
+
+NO.OF RECORDS: 120,065
+
+ORIGINAL FEATURES: 77
+
+SELECTED FEATURES: 7
+
+TARGET: TARGET
+
+### DATASET SPLIT:
+
+The dataset was split into 70% training and 30% testing data. The 70% training data
+was further divided into 80% training and 20% validation, 
+resulting in 56% training, 14% validation, and 30% testing.
+
+### PACKAGES:
+
+pip install pandas numpy torch
+scikit-learn
+matplotlib
+seaborn
+
+### HOW TO RUN:
+
+1. Open the Google Colab notebook.
+2. Upload the datasets in google drive.
+3. Click Run to execute each code cell sequentially.
+4. Run all cells to perform preprocessing, feature selection, and model training.
+5. View the final evaluation metrics and classification results.
+
+
+
+
+
+
+
 # CICIDS-2017 Cyber Threat Detection Using Deep Learning
 
-## Overview
+## Overview In Detail
 
 This project explores machine-learning and deep-learning techniques for detecting malicious network traffic using the CICIDS-2017 intrusion detection dataset.
 
@@ -10,7 +72,7 @@ The Jupyter Notebook implements a data-processing and classification workflow th
 
 **Repository:** [Cyberthreatdetection](https://github.com/dbudagam700/Cyberthreatdetection)
 
-## Project Objectives
+## Project Objectives in Detail
 
 - Analyze network traffic using the CICIDS-2017 benchmark dataset.
 - Clean and preprocess network-flow records.
